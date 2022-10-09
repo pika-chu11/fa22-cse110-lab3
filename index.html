@@ -26,6 +26,7 @@
             <p><b>Brief:</b> Check-in and Brainstorming team name</p>
             <p><b>Time:</b> 20:30 p.m.</p>
             <p><b>Date:</b> Friday Oct. 8th, 2022.</p>
+            <img src="/Meme_icon.jpg" alt="Meme" width="500" height="300">
           <hr>
     </header>    
     <main>
@@ -40,7 +41,7 @@
         
         <section>
             <h2 id="attendance-list">Attandance List</h2>
-            <form>
+            <form onsubmit="alert('Submitted')">
                 <ul>
     
                     <li>Check the <i>members</i> that attended: </li>
@@ -59,6 +60,10 @@
                 </ol>
                 <input type="submit" value = "Submit">
             </form>
+            <h4>Available Time for next Meeting</h3>
+            <h5>Check from the graph</h5>
+            <img src="/Group4_meeting.jpg" alt="time_plot" width="500" height="600">
+            <a href="https://www.when2meet.com/?17123849-UuASN">Check time plot</a>
             <hr>
         </section>
 
@@ -102,7 +107,7 @@
             </form>
 
             <form>
-                <label for="time">Choose a <i>time</i>: </label>
+                <label for="time">Choose a <i>time:</i></label>
                 <select name="time" id="time">
                 <option value="8am">8:00 a.m.</option>
                 <option value="9am">9:00 a.m.</option>
@@ -119,15 +124,32 @@
                 <option value="8pm">8:00 p.m.</option>
             </select>
             </form>
-            <button onclick="datalistcall()" type="button">Click Here</button>
+            <button onclick="alert('You pressed the button!')" type="button">Click Here</button>
             <hr>
+        </section>
+
+        <section>
+            <h2>Disney Land Firework!</h2>
+            <video width="400" height="300" controls>
+                <source src="/firework.mp4" type="video/mp4">
+            </video>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Audio</h2>
+            <audio controls autoplay muted>
+                <source src="/Jay1.flac" type="audio/flac">
+              Your browser does not support the audio element.
+              </audio>
+              <hr>
         </section>
 
         <footer id="end">
             <h2 id="review">Review</h2>
-            <form>
+            <form onsubmit="alert('Submitted')">
                 <p><label for="meetReview"><b>Review for today's Meeting:</b></label></p>
-                <textarea name="meetReview" id="meetReview" cols="50" rows="4"></textarea>
+                <textarea name="meetReview" id="meetReview" cols="50" rows="4">Please write your review here.</textarea>
                 <fieldset style="width:0px">
                     <legend> <b>Messager Info</b></legend>
                     <label for="fname">First name:</label>
