@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +12,7 @@
         <div>
             <nav>
                 <ul>
+                    <li><a href="#header">Top</a></li>
                     <li><a href="#content-covered">Content Covered</a></li>
                     <li><a href="#attendance-list">Attandance List</a></li>
                     <li><a href="#agenda">Agenda</a></li>
@@ -20,7 +22,7 @@
                 </ul>
             </nav>
         </div>
-        <h1>Group[4] First Meeting</h1>
+        <h1 id="header">Group[4] First Meeting</h1>
             <p><b>Brief:</b> Check-in and Brainstorming team name</p>
             <p><b>Time:</b> 20:30 p.m.</p>
             <p><b>Date:</b> Friday Oct. 8th, 2022.</p>
@@ -29,14 +31,20 @@
     <main>
         <section>
             <h2 id="content-covered">Content Covered</h2>
-            <p>Brainstorming team names and figure out by poll/vote/decide one by next <strong>Wed (10/12)</strong>.</p>
+            <details>
+                <summary>Met TA and Next meeting on<strong> Wed (10/12)</strong></summary>
+                Brainstorming team names and figure out by poll/vote/decide one by next <strong>Wed (10/12)</strong>.
+            </details>
             <hr>
         </section>
         
         <section>
             <h2 id="attendance-list">Attandance List</h2>
-            <form action="">
-                <li>Check the <i>members</i> that attended: </li>
+            <form>
+                <ul>
+    
+                    <li>Check the <i>members</i> that attended: </li>
+                </ul>
                 <ol>
                     <li><input type="checkbox"/>Alvin Mangaliman</li>
                     <li><input type="checkbox"/>Andrew Man</li>
@@ -76,16 +84,52 @@
         <section>
             <h2 id="future-task">Future Tasks</h2>
             <ul>
-                <li>Figuire out our <em>team name</em></li><br>
+                <li>Figuire out our <em>team name</em></li>
                 <li>Project <em>direction</em> and <em>content</em></li>
             </ul>
+            <form>
+                <label for="next-meetings">Choose <i>a day</i> for next meeting: </label>
+                <input list="next-meeting" id="next-meetings" name="next-meetings"/>
+                <datalist id="next-meeting">
+                    <option value="Monday">
+                    <option value="Tuesday">
+                    <option value="Wednesday">
+                    <option value="Thursday">
+                    <option value="Friday">
+                    <option value="Saturday">
+                    <option value="Sunday">
+                </datalist>
+            </form>
+
+            <form>
+                <label for="time">Choose a <i>time</i>: </label>
+                <select name="time" id="time">
+                <option value="8am">8:00 a.m.</option>
+                <option value="9am">9:00 a.m.</option>
+                <option value="10am">10:00 a.m.</option>
+                <option value="11am">11:00 a.m.</option>
+                <option value="12pm">12:00 p.m.</option>
+                <option value="1pm">1:00 p.m.</option>
+                <option value="2pm">2:00 p.m.</option>
+                <option value="3pm">3:00 p.m.</option>
+                <option value="4pm">4:00 p.m.</option>
+                <option value="5pm">5:00 p.m.</option>
+                <option value="6pm">6:00 p.m.</option>
+                <option value="7pm">7:00 p.m.</option>
+                <option value="8pm">8:00 p.m.</option>
+            </select>
+            </form>
+            <button onclick="datalistcall()" type="button">Click Here</button>
             <hr>
         </section>
 
         <footer id="end">
-            <form action="/action_page/php">
+            <h2 id="review">Review</h2>
+            <form>
+                <p><label for="meetReview"><b>Review for today's Meeting:</b></label></p>
+                <textarea name="meetReview" id="meetReview" cols="50" rows="4"></textarea>
                 <fieldset style="width:0px">
-                    <legend> <b>Messager</b></legend>
+                    <legend> <b>Messager Info</b></legend>
                     <label for="fname">First name:</label>
                     <input type="text" id="fname" name='fname'><br><br>
                     <label for="lname">Last name:</label>
@@ -95,10 +139,7 @@
                     <input type="submit" value="Submit">
                 </fieldset>
             </form>
-
         </footer>
-
-
     </main>
 </body>
 </html>
