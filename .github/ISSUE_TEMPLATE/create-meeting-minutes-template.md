@@ -2,8 +2,8 @@
 name: Create meeting minutes template
 about: Describe the meeting minutes information
 title: ''
-labels: ''
-assignees: ''
+labels: MeetingMinutes
+assignees: pika-chu11
 
 ---
 
