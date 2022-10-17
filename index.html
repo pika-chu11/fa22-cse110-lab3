@@ -5,164 +5,178 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/github_profile.png">
-    
-    <title>CSE110 Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>CSE110 Team Four</title>
 </head>
 <body>
-    <header>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#header">Top</a></li>
-                    <li><a href="#content-covered">Content Covered</a></li>
-                    <li><a href="#attendance-list">Attandance List</a></li>
-                    <li><a href="#agenda">Agenda</a></li>
-                    <li><a href="#unfinished-tasks">Undone Tasks</a></li>
-                    <li><a href="#future-task">Future Tasks</a></li>
-                    <li><a href="#end">End</a></li>
-                </ul>
-            </nav>
-        </div>
-        <h1 id="header">Group[4] First Meeting</h1>
-            <p><b>Brief:</b> Check-in and Brainstorming team name</p>
-            <p><b>Time:</b> 20:30 p.m.</p>
-            <p><b>Date:</b> Friday Oct. 8th, 2022.</p>
-            <img src="Meme_icon.jpg" alt="Meme" width="500" height="300">
-          <hr>
-    </header>    
-    <main>
-        <section>
-            <h2 id="content-covered">Content Covered</h2>
-            <details>
-                <summary>Met TA and Next meeting on<strong> Wed (10/12)</strong></summary>
-                Brainstorming team names and figure out by poll/vote/decide one by next <strong>Wed (10/12)</strong>.
-            </details>
-            <hr>
-        </section>
-        
-        <section>
-            <h2 id="attendance-list">Attandance List</h2>
-            <form onsubmit="alert('Submitted')">
-                <ul>
-    
-                    <li>Check the <i>members</i> that attended: </li>
-                </ul>
-                <ol>
-                    <li><input type="checkbox"/>Alvin Mangaliman</li>
-                    <li><input type="checkbox"/>Andrew Man</li>
-                    <li><input type="checkbox"/>Brian Dinh</li>
-                    <li><input type="checkbox"/>Chi Zhang</li>
-                    <li><input type="checkbox"/>Jeremy Lei</li>
-                    <li><input type="checkbox"/>Jiseung Yoo</li>
-                    <li><input type="checkbox"/>Liam Golly</li>
-                    <li><input type="checkbox"/>Noah Terminello</li>
-                    <li><input type="checkbox"/>Xuying He</li>
-                    <li><input type="checkbox"/>Yinlong Mi</li>
-                </ol>
-                <input type="submit" value = "Submit">
-            </form>
-            <h4>Available Time for next Meeting</h4>
-            <h5>Check from the graph</h5>
-            <img src="Group4_meeting.jpg" alt="time_plot" width="500" height="600">
-            <a href="https://www.when2meet.com/?17123849-UuASN">Check time plot</a>
-            <hr>
-        </section>
-
-        <section>
-            <h2 id="agenda">Agenda for the day</h2>
-            <h3><b><i>Friday</i></b> &ensp; <b>Oct. 8th, 2022</b></h3>
-            <p><b><i>20:30 p.m.</i></b></p>
-            <ol>
-                <li>Meet with our sponsor TA and group members</li>
-                <li>Get to know each other</li>
-                <li>Figure out our team name</li>
-                <li>Project we are going to do</li>
-            </ol>
-            <h3><b><i>Wednesday</i></b> &ensp; <b>Oct. 12th, 2022</b></h3>
-            <p><b><i>TBA</i></b></p>
-            <hr>
-            <h2 id="unfinished-tasks">Unfinished Tasks</h2>
-            <p> &emsp;<b>&#x2717;</b> Decide our <em>team name</em>.</p>
-            <p> &emsp;<b>&#x2717;</b> <em>Project</em> we propose to do.</p>
-            <hr>
-        </section>
-
-        <section>
-            <h2 id="future-task">Future Tasks</h2>
+    <div class = "navigation">
+        <nav>
             <ul>
-                <li>Figuire out our <em>team name</em></li>
-                <li>Project <em>direction</em> and <em>content</em></li>
+                <li><a href="#header1">Top</a></li>
+                <li><a href="#content-covered">Content Covered</a></li>
+                <li><a href="#attendance-list">Attandance List</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#unfinished-tasks">Undone Tasks</a></li>
+                <li><a href="#future-task">Future Tasks</a></li>
+                <li><a href="#end">End</a></li>
             </ul>
-            <form>
-                <label for="next-meetings">Choose <i>a day</i> for next meeting: </label>
-                <input list="next-meeting" id="next-meetings" name="next-meetings"/>
-                <datalist id="next-meeting">
-                    <option value="Monday">
-                    <option value="Tuesday">
-                    <option value="Wednesday">
-                    <option value="Thursday">
-                    <option value="Friday">
-                    <option value="Saturday">
-                    <option value="Sunday">
-                </datalist>
-            </form>
+        </nav>
+    </div>
 
-            <form>
-                <label for="time">Choose a <i>time:</i></label>
-                <select name="time" id="time">
-                <option value="8am">8:00 a.m.</option>
-                <option value="9am">9:00 a.m.</option>
-                <option value="10am">10:00 a.m.</option>
-                <option value="11am">11:00 a.m.</option>
-                <option value="12pm">12:00 p.m.</option>
-                <option value="1pm">1:00 p.m.</option>
-                <option value="2pm">2:00 p.m.</option>
-                <option value="3pm">3:00 p.m.</option>
-                <option value="4pm">4:00 p.m.</option>
-                <option value="5pm">5:00 p.m.</option>
-                <option value="6pm">6:00 p.m.</option>
-                <option value="7pm">7:00 p.m.</option>
-                <option value="8pm">8:00 p.m.</option>
-            </select>
-            </form>
-            <button onclick="alert('You pressed the button!')" type="button">Click Here</button>
+    <div class = "content">
+        <header>
+            <h1 id="header1">Group[4] First Meeting</h1>
+        </header>        
+            <main>
+                <div id= "meet_info">
+                    <p><b>Brief:</b> Check-in and Brainstorming team name</p>
+                    <p><b>Time:</b> 20:30 p.m.</p>
+                    <p><b>Date:</b> Friday Oct. 8th, 2022.</p>
+                    <img src="Meme_icon.jpg" alt="Meme" width="500" height="300">
+                </div>
             <hr>
-        </section>
+                <section>
+                    <h2 id="content-covered">Content Covered</h2>
+                    <details>
+                        <summary>Met TA and Next meeting on<strong> Wed (10/12)</strong></summary>
+                        Brainstorming team names and figure out by poll/vote/decide one by next <strong>Wed (10/12)</strong>.
+                    </details>
+                    <hr>
+                </section>
+                
+                <section>
+                    <h2 id="attendance-list">Attandance List</h2>
+                    <form onsubmit="alert('Submitted')">
+                        <ul id = "TA_tag">
+                            <li>Check the <i>members</i> that attended: </li>
+                        </ul>
+                        <ol>
+                            <li><input type="checkbox"/>Alvin Mangaliman</li>
+                            <li><input type="checkbox"/>Andrew Man</li>
+                            <li><input type="checkbox"/>Brian Dinh</li>
+                            <li><input type="checkbox"/>Chi Zhang</li>
+                            <li><input type="checkbox"/>Jeremy Lei</li>
+                            <li><input type="checkbox"/>Jiseung Yoo</li>
+                            <li><input type="checkbox"/>Liam Golly</li>
+                            <li><input type="checkbox"/>Noah Terminello</li>
+                            <li><input type="checkbox"/>Xuying He</li>
+                            <li><input type="checkbox"/>Yinlong Mi</li>
+                        </ol>
+                        <input type="submit" value = "Submit">
+                    </form>
+                    <h4>Available Time for next Meeting</h4>
+                    <h5>Check from the graph</h5>
+                    <img src="Group4_meeting.jpg" alt="time_plot" width="500" height="600">
+                    <br>
+                    <a href="https://www.when2meet.com/?17123849-UuASN">Check time plot</a>
+                    <hr>
+                </section>
+        
+                <section>
+                    <h2 id="agenda">Agenda for the day</h2>
+                    <h3><b><i>Friday</i></b> &ensp; <b>Oct. 8th, 2022</b></h3>
+                    <p><b><i>20:30 p.m.</i></b></p>
+                    <ol>
+                        <li>Meet with our sponsor TA and group members</li>
+                        <li>Get to know each other</li>
+                        <li>Figure out our team name</li>
+                        <li>Project we are going to do</li>
+                    </ol>
+                    <h3><b><i>Wednesday</i></b> &ensp; <b>Oct. 12th, 2022</b></h3>
+                    <p><b><i>TBA</i></b></p>
+                    <hr>
+                    <h2 id="unfinished-tasks">Unfinished Tasks</h2>
+                    <p> &emsp;<b>&#x2717;</b> Decide our <em>team name</em>.</p>
+                    <p> &emsp;<b>&#x2717;</b> <em>Project</em> we propose to do.</p>
+                    <hr>
+                </section>
+        
+                <section>
+                    <h2 id="future-task">Future Tasks</h2>
+                    <ul>
+                        <li>Figuire out our <em>team name</em></li>
+                        <li>Project <em>direction</em> and <em>content</em></li>
+                    </ul>
+                    <form>
+                        <label for="next-meetings">Choose <i>a day</i> for next meeting: </label>
+                        <input list="next-meeting" id="next-meetings" name="next-meetings"/>
+                        <datalist id="next-meeting">
+                            <option value="Monday">
+                            <option value="Tuesday">
+                            <option value="Wednesday">
+                            <option value="Thursday">
+                            <option value="Friday">
+                            <option value="Saturday">
+                            <option value="Sunday">
+                        </datalist>
+                    </form>
+        
+                    <form>
+                        <label for="time">Choose a <i>time:</i></label>
+                        <select name="time" id="time">
+                        <option value="8am">8:00 a.m.</option>
+                        <option value="9am">9:00 a.m.</option>
+                        <option value="10am">10:00 a.m.</option>
+                        <option value="11am">11:00 a.m.</option>
+                        <option value="12pm">12:00 p.m.</option>
+                        <option value="1pm">1:00 p.m.</option>
+                        <option value="2pm">2:00 p.m.</option>
+                        <option value="3pm">3:00 p.m.</option>
+                        <option value="4pm">4:00 p.m.</option>
+                        <option value="5pm">5:00 p.m.</option>
+                        <option value="6pm">6:00 p.m.</option>
+                        <option value="7pm">7:00 p.m.</option>
+                        <option value="8pm">8:00 p.m.</option>
+                    </select>
+                    </form>
+                    <button onclick="alert('You pressed the button!')" type="button">Click Here</button>
+                    <hr>
+                </section>
+        
 
-        <section>
-            <h2>Disney Land Firework!</h2>
-            <video width="400" height="300" controls>
-                <source src="firework.mp4" type="video/mp4">
-            </video>
-            <hr>
-        </section>
+                <div class = "row">
+                    <div class = "column">
+                        <section>
+                            <h2>Disney Land Firework!</h2>
+                            <video width="400" height="300" controls>
+                                <source src="firework.mp4" type="video/mp4">
+                            </video>
+                            <hr>
+                        </section>                           
+                    </div>
+                    <div class = "column">
+                        <section>
+                            <h2>Audio</h2>
+                            <audio controls autoplay muted>
+                                <source src="Jay1.flac" type="audio/flac">
+                              Your browser Does Not support the audio element.
+                              </audio>
+                              <hr>
+                        </section>
+                    </div>
 
-        <section>
-            <h2>Audio</h2>
-            <audio controls autoplay muted>
-                <source src="Jay1.flac" type="audio/flac">
-              Your browser Does Not support the audio element.
-              </audio>
-              <hr>
-        </section>
+                </div>
 
-        <footer id="end">
-            <h2 id="review">Review</h2>
-            <form onsubmit="alert('Submitted')">
-                <p><label for="meetReview"><b>Review for today's Meeting:</b></label></p>
-                <textarea name="meetReview" id="meetReview" cols="50" rows="4">Please write your review here.</textarea>
-                <fieldset style="width:0px">
-                    <legend> <b>Messager Info</b></legend>
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name='fname'><br><br>
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname"><br><br>
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="'email"><br><br>
-                    <input type="submit" value="Submit">
-                </fieldset>
-            </form>
-        </footer>
-    </main>
+        
+        
+                <footer id="end">
+                    <h2 id="review">Review</h2>
+                    <form onsubmit="alert('Submitted')">
+                        <p><label for="meetReview"><b>Review for today's Meeting:</b></label></p>
+                        <textarea name="meetReview" id="meetReview" cols="50" rows="4">Please write your review here.</textarea>
+                        <fieldset style="width:0px">
+                            <legend> <b>Messager Info</b></legend>
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name='fname'><br><br>
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname"><br><br>
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="'email"><br><br>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </footer>
+            </main>
+    </div>
 </body>
 </html>
