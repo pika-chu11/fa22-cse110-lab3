@@ -1,7 +1,27 @@
 # **Standup Notes**
 
-### Progress
-1. - [x] CSE 110 Web Design :+1: :tada:
-2. - [ ] Math 103A Homework
-3. - [ ] Math 173A Homework
-4. - [ ] Math 154 Homework
+### Proposal
+1. - [x] Task1 :+1: :tada:
+2. - [ ] Task2
+3. - [ ] Task3
+4. - [ ] Tas4
+
+### Todo
+1. - [x] Task1 :+1: :tada:
+2. - [ ] Task2
+3. - [ ] Task3
+4. - [ ] Task4
+
+
+### In Progress
+1. - [x] Task1 :+1: :tada:
+2. - [ ] Task2
+3. - [ ] Task3
+4. - [ ] Task4
+
+
+### Party
+1. - [x] Task1 :+1: :tada:
+2. - [ ] Task2
+3. - [ ] Task3
+4. - [ ] Task4
